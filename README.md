@@ -4,5 +4,7 @@
 - The control div contains bullets to show the progress in the questions and a timer for each question.
 - The main contains the question, 4 answers to choose the right one and a submit button.
 - If the user clicked submit, pressed "Enter" or the timer ended, the checked answer will be the user's answer.
+- If the answer is right, it will be colored green and a success audio will play.
+- If the answer is wrong, it will be colored red and a fail audio will play.
 - The first radio in answers will be checked and focused each question so the user can change the checked one by the arrows in the keyboard.
 - Using HTML, CSS, JavaScript.
