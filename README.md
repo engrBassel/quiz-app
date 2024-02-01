@@ -3,6 +3,7 @@
 - The header contains the category of the question and the number of questions.
 - The control div contains bullets to show the progress in the questions and a timer for each question.
 - The main contains the question, 4 answers to choose the right one and a submit button.
+- The questions will be shuffled each start of the app and the answers of each question will be shuffled too.
 - If the user clicked submit, pressed "Enter" or the timer ended, the checked answer will be the user's answer.
 - If the answer is right, it will be colored green and a success audio will play.
 - If the answer is wrong, it will be colored red and a fail audio will play.
