@@ -1,0 +1,47 @@
+[
+  {
+    "category": "Football",
+    "title": "ALAhly won the african champions league ...... times",
+    "a1": 7,
+    "a2": 9,
+    "a3": 11,
+    "a4": 13,
+    "rightAnswer": 11
+  },
+  {
+    "category": "Football",
+    "title": "Zamalek won the african champions league ...... times",
+    "a1": 1,
+    "a2": 3,
+    "a3": 5,
+    "a4": 7,
+    "rightAnswer": 5
+  },
+  {
+    "category": "Football",
+    "title": "Sundowns won the african champions league ...... times",
+    "a1": 1,
+    "a2": 2,
+    "a3": 3,
+    "a4": 4,
+    "rightAnswer": 1
+  },
+  {
+    "category": "Football",
+    "title": "Egypt won the african nations cup ...... times",
+    "a1": 3,
+    "a2": 5,
+    "a3": 7,
+    "a4": 9,
+    "rightAnswer": 7
+  },
+  {
+    "category": "Football",
+    "title": "Cameroon won the african nations cup ...... times",
+    "a1": 1,
+    "a2": 3,
+    "a3": 5,
+    "a4": 7,
+    "rightAnswer": 5
+  }
+]

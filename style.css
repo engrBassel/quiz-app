@@ -1,0 +1,168 @@
+/* variables start */
+:root {
+  --main-color: #ebdfb6;
+  --sec-color: #1f1f1f;
+  --right-color: #adff2f;
+  --wrong-color: #f00;
+}
+/* variables end */
+/* global rules start */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: monospace, sans-serif;
+  background-color: var(--sec-color);
+  color: #fff;
+}
+.container {
+  padding: 1rem;
+}
+@media (min-width: 62em) {
+  .container {
+    width: 70%;
+    margin: auto;
+  }
+}
+/* global rules end */
+/* header start */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  font-size: clamp(1rem, 3svw, 2rem);
+}
+.header span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+/* header end */
+/* control start */
+.control,
+.control .bullets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.control {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.control .bullets .bullet {
+  width: 25px;
+  height: 25px;
+  border: 3px dotted var(--main-color);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.control .bullets .bullet.active {
+  background-color: var(--main-color);
+}
+.control .timer {
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+.control .timer.danger {
+  color: var(--wrong-color);
+}
+/* control end */
+/* main start */
+.app {
+  border: 3px dotted var(--main-color);
+  padding: 2rem;
+  user-select: none;
+}
+@media (max-width: 37.49em) {
+  .app {
+    padding: 1rem;
+  }
+}
+.app .q-title {
+  border-bottom: 3px dotted var(--main-color);
+  padding-bottom: 1rem;
+  font-size: clamp(1rem, 3svw, 2rem);
+  color: var(--main-color);
+}
+.app .q-answers {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.app .q-answers .q-answer:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.app .q-answers .q-answer input,
+.app .q-answers .q-answer label,
+.app button {
+  cursor: pointer;
+}
+.app .q-answers .q-answer input:focus,
+.app button:focus {
+  outline: none;
+  border-style: solid;
+}
+.app .q-answers .q-answer input:hover,
+.app button:hover {
+  background-color: var(--main-color);
+  color: var(--sec-color);
+}
+.app .q-answers .q-answer input {
+  position: relative;
+  top: -3px;
+  accent-color: var(--main-color);
+}
+.app .q-answers .q-answer input.right-answer {
+  accent-color: var(--right-color);
+}
+.app .q-answers .q-answer input.wrong-answer {
+  accent-color: var(--wrong-color);
+}
+.app .q-answers .q-answer input:checked + label {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.app .q-answers .q-answer label {
+  padding-left: 10px;
+}
+.app button {
+  display: block;
+  border: 3px dotted var(--main-color);
+  padding: 1rem;
+  width: 100%;
+  background: transparent;
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* main end */
+/* result div start */
+.result {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.perfect {
+  color: var(--right-color);
+}
+.good {
+  color: var(--main-color);
+}
+.bad {
+  color: var(--wrong-color);
+}
+.right-answer {
+  color: var(--right-color) !important;
+}
+.wrong-answer {
+  color: var(--wrong-color) !important;
+}
+/* result div end */
